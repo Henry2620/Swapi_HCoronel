@@ -1,0 +1,13 @@
+<div class="character-card-container">
+    <nz-card *ngFor="let person of people">
+      <ng-template #coverTemplate>
+      </ng-template>
+      <nz-card [nzCover]="coverTemplate">
+        <nz-card-meta
+          nzTitle="{{ person.name }}"
+          nzDescription="Height: {{ person.height }} | Mass: {{ person.mass }} | Hair Color: {{ person.hair_color }} | Skin Color: {{ person.skin_color }} | Eye Color: {{ person.eye_color }} | Birth Year: {{ person.birth_year }} | Gender: {{ person.gender }}">
+        </nz-card-meta>
+      </nz-card>
+    </nz-card>
+  </div>
+  
